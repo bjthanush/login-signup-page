@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="../../static/css/css3.css" />
+    <style>
+      a {
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="row" style="margin-top: 40px">
+          {% for post in posts %}
+          <li><a>{{ post.username }}</a></li>
+          <li><a>{{ post.email }}</a></li>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
